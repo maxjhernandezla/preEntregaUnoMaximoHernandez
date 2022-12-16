@@ -1,0 +1,53 @@
+
+
+.header {
+    background-color: #DEDEDE;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin: 0px auto;
+    min-height: 8vh;
+    
+
+    .header__logo {
+        font-weight: bold;
+        height: 42px;
+        text-decoration: none;
+        color: black;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    .header__button {
+        background-color: red;
+        margin-right: 15px;
+        border-radius: 50%;
+        :hover {
+            background-color: blue;
+        }
+    }
+    .header__nav {
+        a {
+            text-decoration: none;
+            color: black;
+            margin: 15px;
+        }
+    }
+    .cart__container{
+        cursor: pointer;
+        .cart {
+                color: black;
+                text-decoration: none;
+        }
+        .cart__number {
+            background-color: red;
+            padding: 4px;
+            border-radius: 50%;
+            position: absolute;
+            color: white;
+            
+        }
+    }
+}
