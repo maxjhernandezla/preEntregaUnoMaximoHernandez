@@ -1,5 +1,5 @@
+import { CartWidget } from "../CartWidget/CartWidget";
 import "./Navbar.scss";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 export const Navbar = () => {
   return (
@@ -14,10 +14,7 @@ export const Navbar = () => {
         <a href="#">Marcas</a>
         <a href="#">Ofertas</a>
       </nav>
-      <a href="#" className="cart__container">
-        <ShoppingCartIcon className="cart" fontSize="medium" />
-        <span className="cart__number">0</span>
-      </a>
+      <CartWidget />
     </header>
   );
 };

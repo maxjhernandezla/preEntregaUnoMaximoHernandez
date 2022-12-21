@@ -1,0 +1,17 @@
+.itemCount {
+    display: flex;
+    flex-direction: row;
+
+    width: fit-content;
+    .counter {
+        padding: 15px;
+        margin: 0;
+        
+    }
+    .btn {
+        background-color: rgba(191, 173, 173, 0.372);
+        border: 1px black solid;
+        padding: 0;
+        width: fit-content;
+    }
+}
