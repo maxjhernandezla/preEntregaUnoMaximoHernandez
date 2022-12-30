@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <header className="header">
       <a href="#" className="header__logo">
-        Max Shoes
+        <img src="./img/logo-no-background.png" />
       </a>
 
       <nav className="header__nav">

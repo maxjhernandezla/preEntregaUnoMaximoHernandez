@@ -19,6 +19,9 @@
         margin: 0;
         display: flex;
         align-items: center;
+        img {
+            width: 250px;
+        }
     }
     .header__button {
         background-color: red;
