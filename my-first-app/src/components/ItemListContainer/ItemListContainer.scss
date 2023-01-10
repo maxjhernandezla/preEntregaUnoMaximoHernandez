@@ -2,27 +2,4 @@
     background-color: #DEDEDE;
     height: fit-content;
     margin: 0 auto;
-    .title {
-       padding: 15px;
-       margin: 0;
-       text-align: center;
-       background-color: #000000;
-       color: #DEDEDE;
-    }
-    .searchContainer {
-        display: flex;
-        justify-content: end;
-    }
-    .itemsContainer {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 15px;
-            .itemImage {
-                width: 300px;
-            }
-        
-    }
 }

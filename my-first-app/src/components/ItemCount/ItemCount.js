@@ -15,11 +15,21 @@ export const ItemCount = ({ stock }) => {
 
   return (
     <div className="itemCount">
-      <Button className="btn" onClick={restar}>
+      <Button
+        className="btn"
+        variant="outlined"
+        color="primary"
+        onClick={restar}
+      >
         -
       </Button>
       <p className="counter">{counter}</p>
-      <Button className="btn" onClick={sumar}>
+      <Button
+        className="btn"
+        variant="contained"
+        color="primary"
+        onClick={sumar}
+      >
         +
       </Button>
     </div>
