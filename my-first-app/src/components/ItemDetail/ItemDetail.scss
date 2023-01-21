@@ -3,9 +3,16 @@
     margin: 50px;
     flex-direction: row;
     border: 0.5px solid rgba(0, 0, 0, 0.111);
-    max-height: 70vh;
-    .detailImage {
-        width: 60vw;
+    min-height: 70vh;
+    .imageContainer {
+        min-width: 60vw;
+        display: flex;
+        justify-content: center;
+
+        .detailImage {
+            max-width: 55vw;
+            max-height: 70vh;
+        }   
     }
     .descriptionContainer{
         display: flex;
@@ -24,11 +31,12 @@
         .detailDescription {
             margin: 20px 0px;
         }
-        .quantity {
+        .amount{
             display: flex;
             flex-direction: row;
             align-items: center;
-    justify-content: space-around;
+            justify-content: space-around;
+            color: #00000077;
         }
     }
 }

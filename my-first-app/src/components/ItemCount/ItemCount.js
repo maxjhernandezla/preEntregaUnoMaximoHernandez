@@ -1,16 +1,13 @@
 import "./ItemCount.scss";
 import { Button } from "@mui/material";
-import { useState } from "react";
 
-export const ItemCount = ({ stock }) => {
-  const [counter, setCounter] = useState(0);
-
-  const sumar = () => {
-    setCounter(counter + 1);
+export const ItemCount = ({ max, setCounter, counter }) => {
+  const handleAdd = () => {
+    counter < max && setCounter(counter + 1);
   };
 
-  const restar = () => {
-    if (counter > 0) setCounter(counter - 1);
+  const handleSubtract = () => {
+    counter > 1 && setCounter(counter - 1);
   };
 
   return (
@@ -19,7 +16,7 @@ export const ItemCount = ({ stock }) => {
         className="btn"
         variant="outlined"
         color="primary"
-        onClick={restar}
+        onClick={handleSubtract}
       >
         -
       </Button>
@@ -28,7 +25,7 @@ export const ItemCount = ({ stock }) => {
         className="btn"
         variant="contained"
         color="primary"
-        onClick={sumar}
+        onClick={handleAdd}
       >
         +
       </Button>

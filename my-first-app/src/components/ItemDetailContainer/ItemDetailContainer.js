@@ -6,7 +6,6 @@ import { ItemDetail } from "../ItemDetail/ItemDetail.js";
 export const ItemDetailContainer = ({}) => {
   const [item, setItem] = useState(null);
   const { itemId } = useParams();
-  console.log(item);
   useEffect(() => {
     getItemById(Number(itemId)).then((data) => {
       setItem(data);

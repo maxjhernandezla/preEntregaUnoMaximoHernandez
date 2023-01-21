@@ -6,7 +6,8 @@
     "description": "Inspired by the original AJ1, the Air Jordan 1 Mid offers fans a chance to follow in MJ's footsteps. Fresh color trims the clean, classic materials, imbuing modernity into a classic design.",
     "image": "/img/Air-Jordan-1-Mid.jpeg",
     "category": "Jordan",
-    "price": "55.900"
+    "price": 55900,
+    "stock": 40
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "description": "The Air Jordan 1 Retro High remakes the classic sneaker, giving you a fresh look with a familiar feel. Premium materials with new colors and textures give modern expression to an all-time favorite.",
     "image": "/img/Air-Jordan-1-Retro-High-OG.jpeg",
     "category": "Jordan",
-    "price": "34.500"
+    "price": 34500,
+    "stock": 40
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a clean, classic look that's familiar yet always fresh. With an iconic design that pairs perfectly with any 'fit, these kicks ensure you'll always be on point.",
     "image": "/img/Air-Jordan-1-Low.jpeg",
     "category": "Jordan",
-    "price": "60.000"
+    "price": 60000,
+    "stock": 40
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "description": "Classic meets modern in this fresh take on a Jordan Brand essential. Durable leather and suede are bolstered by lightweight synthetics for extra support. The iconic midtop silhouette is more breathable than ever with a perforated sockliner. Plus, inspirational messages nodding to MJ's origin story are incorporated into the design, adding meaning to every step.",
     "image": "/img/Jordan-Series-Mid.jpeg",
     "category": "Jordan",
-    "price": "22.000"
+    "price": 22000,
+    "stock": 40
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "description": "The Blazer Mid is an iconic hoops shoe tailored to the needs of the modern skateboarder. Durable leather is paired with tacky rubber for flexible grip and comfort that lasts.",
     "image": "/img/Nike-SB-Zoom-Blazer-Mid.jpeg",
     "category": "Nike-SB",
-    "price": "25.900"
+    "price": 25900,
+    "stock": 40
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "description": "The Nike SB Chron 2 Canvas is the newest member of the Chron family. The revamped design includes a reshaped collar and heel for an improved fit—all while maintaining the comfort and performance you expect from Nike SB.",
     "image": "/img/Nike-SB-Chron-2-Canvas.jpeg",
     "category": "Nike-SB",
-    "price": "18.000"
+    "price": 18000,
+    "stock": 40
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "description": "Varsity vibes never go out of style. The Nike SB Dunk High Pro pairs premium materials with classic color blocking for an iconic look—reimagined for skate. Orange accents finish it off, nodding to the color of Nike's original shoebox from 1971.",
     "image": "/img/Nike-SB-Dunk-High-Pro.jpeg",
     "category": "Nike-SB",
-    "price": "22.500"
+    "price": 22500,
+    "stock": 40
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "description": "With its tonal design and classic materials, the Blazer Court Mid updates the retro hoops vibe for skate. Its reinforced ollie zone and flexible sole help it last through your toughest sessions.",
     "image": "/img/Nike-SB-Blazer-Court-Mid-Premium.jpeg",
     "category": "Nike-SB",
-    "price": "30.000"
+    "price": 30000,
+    "stock": 40
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "description": "Giannis is an incessant storm of stamina and skill that keeps coming at opponents for 4 quarters or more. The forward-thinking design of his latest signature shoe helps propel you down the court in a lightweight fit that moves with you. It can handle quick changes in direction on both sides of the floor, giving you side-to-side stability and multidirectional traction as you Euro step to the hoop.",
     "image": "/img/Zoom-Freak-4.jpeg",
     "category": "Basketball",
-    "price": "52.000"
+    "price": 52000,
+    "stock": 40
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "description": "Bah, humbug! Not with the LeBron 20 “Stocking Stuffer” under the tree. Revisiting the iconic lineup of the King’s Christmas Day kicks, this design’s festive array of graphics and colors creates a mash-up of Christmas’ past. From dimes to dunks, this is no ugly sweater—its lightweight, low-to-the-ground and ultra-cushioned design is fresher than pine and cozier than a cup of cocoa by the fireside. Hope you’ve been nice.",
     "image": "/img/LeBron-XX-Stocking-Stuffer.jpeg",
     "category": "Basketball",
-    "price": "47.000"
+    "price": 47000,
+    "stock": 40
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "description": "Celebrate the love and joy of the game with the Nike Cosmic Unity 2. Made with at least 20% recycled content by weight, it provides enhanced responsiveness and support. This shoe will help keep you fresh and secure without overloading it with extra ounces, so that you can focus on locking down the perimeter defensively or starting the fast break after a rebound.",
     "image": "/img/Nike-Cosmic-Unity-2.jpeg",
     "category": "Basketball",
-    "price": "37.900"
+    "price": 37900,
+    "stock": 40
   },
   {
     "id": 12,
@@ -105,7 +116,8 @@
     "description": "Designed for #77 and made for every athlete craving speed and efficiency, Luka's debut delivers the goods. The first shoe with full-length Formula 23 foam, it has an ultra-supportive fit crafted with the step-back in mind. Meanwhile, strong and lightweight Flight Wire cables keep you feeling contained, whether you're playing indoors or out. This is the assist you've been waiting for—get out there and make your shot.",
     "image": "/img/Luka-1.jpeg",
     "category": "Basketball",
-    "price": "50.000"
+    "price": 50000,
+    "stock": 40
   },
   {
     "id": 13,
@@ -114,7 +126,8 @@
     "description": "With its lightweight upper and plush support system, the KD Trey 5 X can help you float like KD, waiting for the perfect moment to drive to the hoop. A secure midfoot strap is suited for scoring binges and defensive stands, so that you can lock in and keep winning.",
     "image": "/img/KD-Trey-5-X.jpeg",
     "category": "Basketball",
-    "price": "28.000"
+    "price": 28000,
+    "stock": 40
   },
   {
     "id": 14,
@@ -123,7 +136,8 @@
     "description": "Paul George does it all on the court, comfortably. He can take it to the hole, drive and dish, catch and shoot—always smooth, frequently devastating. Thanks to breathable mesh and responsive foam, his signature PG 6 is designed to feel light and buoyant like you're walking on clouds.",
     "image": "/img/PG-6.jpeg",
     "category": "Basketball",
-    "price": "39.000"
+    "price": 39000,
+    "stock": 40
   },
   {
     "id": 15,
@@ -132,7 +146,8 @@
     "description": "These adidas high top shoes got their name from — no surprise — being reserved for the top ten players in basketball way back in the day. Far from the hardwood now, they still pulse with that B-ball DNA that made people first take notice. Easy colors on the soft, full grain leather upper add to the vintage vibes.",
     "image": "/img/TOP-TEN-RB-SHOES.jpeg",
     "category": "Originals",
-    "price": "30.000"
+    "price": 30000,
+    "stock": 40
   },
   {
     "id": 16,
@@ -141,7 +156,8 @@
     "description": "Timeless appeal. Effortless style. Everyday versatility. For over 50 years and counting, adidas Stan Smith Shoes have continued to hold their place as an icon. This pair shows off a fresh redesign as part of adidas' commitment to use only recycled polyester by 2024. With a vegan upper and an outsole made from rubber waste, they still have iconic style, they're just made with the planet in mind.",
     "image": "/img/STAN-SMITH-SHOES.jpeg",
     "category": "Originals",
-    "price": "25.800"
+    "price": 25800,
+    "stock": 40
   },
   {
     "id": 17,
@@ -150,7 +166,8 @@
     "description": "Originally made for basketball courts in the '70s. Celebrated by hip hop royalty in the '80s. The adidas Superstar shoe is now a lifestyle staple for streetwear enthusiasts. The world-famous shell toe feature remains, providing style and protection. Just like it did on the B-ball courts back in the day.",
     "image": "/img/SUPERSTAR-SHOES.jpeg",
     "category": "Originals",
-    "price": "22.000"
+    "price": 22000,
+    "stock": 40
   },
   {
     "id": 18,
@@ -159,7 +176,8 @@
     "description": "When the adidas Forum debuted in '84, it quickly dominated the basketball scene — and for good reason. It's forward-thinking tech raised the bar on the hardwood, and its swagger made waves off it. Back in a low top iteration with premium leather and all the classic details, these shoes honor heritage while keeping your style fresh. We even removed the top strap to let that crisscross ankle and tongue label really shine.",
     "image": "/img/FORUM-LOW-SHOES.jpeg",
     "category": "Originals",
-    "price": "40.000"
+    "price": 40000,
+    "stock": 40
   },
   {
     "id": 19,
@@ -168,7 +186,8 @@
     "description": "These Adizero Rose Restomod shoes from adidas Basketball are an ode to Derrick's early career. Classic D-Rose details are enhanced with Restomod upgrades, like a Lightstrike midsole for ultra-lightweight cushioning and a Puremotion outsole for superior grip. The shoes built for one of the fastest players are now lighter than ever.",
     "image": "/img/ADIZERO-ROSE-1.5-LOW-RESTOMOD-BASKETBALL-SHOES.jpeg",
     "category": "Basketball",
-    "price": "60.000"
+    "price": 60000,
+    "stock": 40
   },
   {
     "id": 20,
@@ -177,7 +196,8 @@
     "description": "Strike when your opponent least expects it. Drive to the rim, pull up from deep and leave defenders in your wake — just like James Harden. These adidas basketball shoes are made with BOOST for the energy return you need from the opening whistle to those grueling last seconds of overtime. Bands on the forefoot and heel give you a locked-down feel all game long.",
     "image": "/img/HARDEN-VOL-6-BASKETBALL-SHOES.jpeg",
     "category": "Basketball",
-    "price": "39.800"
+    "price": 39800,
+    "stock": 40
   },
   {
     "id": 21,
@@ -186,7 +206,8 @@
     "description": "One of the coldest on the hardwood, Trae Young is absolutely fearless. He'll take any shot at any time, and when it's all on the line, look out, because Trae is about to steal the show. The newest signature shoes from adidas Basketball and Trae Young are all about agility and speed, the two elements that make Trae so dynamic. BOOST and Lightstrike work in tandem with an adaptive SCK360, semi-laceless upper to deliver enhanced comfort and game-changing support.",
     "image": "/img/TRAE-YOUNG-20-BASKETBALL-SHOES.jpeg",
     "category": "Basketball",
-    "price": "22.000"
+    "price": 22000,
+    "stock": 40
   },
   {
     "id": 22,
@@ -195,6 +216,7 @@
     "description": "Damian Lillard's style mixes basketball and hip hop. He dominates the hardwood the same way he dominates the recording studio. The Dame Certified Shoes from adidas Basketball build on Dame D.O.L.LA.'s legacy. They feature a lightweight Bounce midsole for elevated cushioning, a breathable upper that keeps the air flowing and all the signature details that celebrate the greatness of Damian Lillard.",
     "image": "/img/DAME-CERTIFIED-BASKETBALL-SHOES.jpeg",
     "category": "Basketball",
-    "price": "47.500"
+    "price": 47500,
+    "stock": 40
   }
 ]
