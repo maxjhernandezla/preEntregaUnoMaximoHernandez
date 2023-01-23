@@ -10,7 +10,6 @@ const initCart = JSON.parse(localStorage.getItem("cart")) || [];
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(initCart);
-  console.log(cart);
 
   const addToCart = (addedItem) => {
     // setCart([...cart, addedItem]);

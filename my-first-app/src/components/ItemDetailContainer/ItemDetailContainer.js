@@ -8,7 +8,7 @@ export const ItemDetailContainer = ({}) => {
   const [item, setItem] = useState(null);
   const { itemId } = useParams();
   useEffect(() => {
-    const docRef = doc(db, "productos", itemId);
+    const docRef = doc(db, "products", itemId);
     getDoc(docRef).then((doc) => setItem({ ...doc.data(), id: doc.id }));
   }, [itemId]);
 

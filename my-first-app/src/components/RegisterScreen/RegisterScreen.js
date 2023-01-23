@@ -1,15 +1,15 @@
-import "./LoginScreen.scss";
+import "./RegisterScreen.scss";
 import { useContext, useState } from "react";
 import Button from "react-bootstrap/Button";
 import { LoginContext } from "../../context/LoginContext";
 import { Link } from "react-router-dom";
-export const LoginScreen = () => {
+export const RegisterScreen = () => {
   const [values, setValues] = useState({
     email: "",
     password: "",
   });
 
-  const { logIn, user } = useContext(LoginContext);
+  const { user, singUp } = useContext(LoginContext);
 
   const handleInputChange = (e) => {
     setValues({
@@ -20,13 +20,13 @@ export const LoginScreen = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    logIn(values);
+    singUp(values);
   };
 
   return (
     <div className="login__screen">
       <div>
-        <h2>Login</h2>
+        <h2>Regístrate</h2>
         <hr />
         <form onSubmit={handleSubmit} className="login__form">
           <input
@@ -48,7 +48,7 @@ export const LoginScreen = () => {
           {user.error && <p className="error">{user.error}</p>}
           <button className="btn btn-primary">Ingresar</button>
         </form>
-        <Link to="/register">No tengo cuenta, quiero registrarme</Link>
+        <Link to="/login">Ya estoy registrado</Link>
       </div>
     </div>
   );

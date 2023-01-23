@@ -11,7 +11,7 @@ export const Cart = () => {
       <hr />
       {cart.map((item) => (
         <div key={item.id}>
-          <h3>{item.itemName}</h3>
+          <h3>{item.name}</h3>
           {/* <img src={item.image} /> */}
           <p>Cantidad: {item.amount}</p>
           <p>Precio: ${item.price * item.amount} </p>

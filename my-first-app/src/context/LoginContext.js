@@ -1,4 +1,11 @@
-import { createContext, useState } from "react";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from "firebase/auth";
+import { createContext, useEffect, useState } from "react";
+import { auth } from "../firebase/config.js";
 
 const MOCK_USERS = [
   {
@@ -15,36 +22,70 @@ export const LoginProvider = ({ children }) => {
     loged: false,
     error: null,
   });
-  console.log(user);
-  const logIn = (values) => {
-    const match = MOCK_USERS.find(
-      (user) => user.email === values.email && user.password === values.password
-    );
 
-    if (match) {
-      setUser({
-        email: match.email,
-        logged: true,
-        error: null,
+  const logIn = (values) => {
+    signInWithEmailAndPassword(auth, values.email, values.password)
+      .then((userCredential) => {
+        setUser({
+          email: userCredential.user.email,
+          logged: true,
+          error: null,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        setUser({
+          email: null,
+          loged: false,
+          error: err.message,
+        });
       });
-    } else {
-      setUser({
-        email: null,
-        loged: false,
-        error: "Los datos son inválidos",
-      });
-    }
   };
 
   const logOut = () => {
-    setUser({
-      email: null,
-      loged: false,
-      error: null,
+    signOut(auth).then(() => {
+      setUser({
+        email: null,
+        loged: false,
+        error: null,
+      });
     });
   };
+
+  const singUp = (values) => {
+    createUserWithEmailAndPassword(auth, values.email, values.password)
+      .then((userCredential) => {
+        setUser({
+          email: userCredential.user.email,
+          logged: true,
+          error: null,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        setUser({
+          email: null,
+          loged: false,
+          error: err.message,
+        });
+      });
+  };
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser({
+          email: user.email,
+          logged: true,
+          error: null,
+        });
+      } else {
+        logOut();
+      }
+    });
+  }, []);
   return (
-    <LoginContext.Provider value={{ user, logIn, logOut }}>
+    <LoginContext.Provider value={{ user, logIn, logOut, singUp }}>
       {children}
     </LoginContext.Provider>
   );

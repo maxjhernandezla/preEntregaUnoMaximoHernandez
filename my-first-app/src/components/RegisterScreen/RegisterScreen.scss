@@ -1,0 +1,9 @@
+.login__screen {
+    display: flex;
+    justify-content: center;
+    .login__form {
+        display: flex;
+        flex-direction: column;
+        min-width: 450px;
+    }
+}
