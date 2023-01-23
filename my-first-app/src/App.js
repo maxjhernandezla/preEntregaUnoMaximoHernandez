@@ -1,32 +1,15 @@
-import { ItemCount } from "./components/ItemCount/ItemCount.js";
-import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer.js";
-import { Navbar } from "./components/Navbar/Navbar.js";
-
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer.js";
-import { Item } from "./components/Item/Item.js";
+import { LoginProvider } from "./context/LoginContext.js";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { CartProvider } from "./context/CartContext.js";
-import { Cart } from "./components/Cart/Cart.js";
+import { AppRouter } from "./router/AppRouter.js";
 
 function App() {
   return (
-    <CartProvider>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={<ItemListContainer title="Nuestros Productos" />}
-          />
-          <Route
-            path="/productos/:categoryId"
-            element={<ItemListContainer />}
-          />
-          <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-      </BrowserRouter>
-    </CartProvider>
+    <LoginProvider>
+      <CartProvider>
+        <AppRouter />
+      </CartProvider>
+    </LoginProvider>
   );
 }
 
