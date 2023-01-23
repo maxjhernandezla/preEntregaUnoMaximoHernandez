@@ -29,7 +29,7 @@ export const Item = ({ prod, item }) => {
         <img
           className="itemImage"
           src={process.env.PUBLIC_URL + prod.image}
-          alt={prod.itemName}
+          alt={prod.name}
         />
       </div>
       <CardContent>
@@ -39,7 +39,7 @@ export const Item = ({ prod, item }) => {
           variant="h5"
           component="div"
         >
-          {prod.itemName.toUpperCase()}
+          {prod.name}
         </Typography>
         <Typography
           variant="body2"
