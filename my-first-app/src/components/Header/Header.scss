@@ -31,18 +31,11 @@
                 background-color: blue;
             }
         }
-        .header__nav {
-            a {
-                text-decoration: none;
-                color: black;
-                margin: 15px;
-            }
-        }
         .cart__container{
             cursor: pointer;
             .cart {
-                    color: black;
-                    text-decoration: none;
+                color: black;
+                text-decoration: none;
             }
             .cart__number {
                 background-color: red;
@@ -54,10 +47,14 @@
             }
         }
     }
-    .header__welcome {
+    .header__nav {
+        background-color: black;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 10px;
+        justify-content: center;
+        a {
+            text-decoration: none;
+            color: #DEDEDE;
+            margin: 15px;
+        }
     }
 }

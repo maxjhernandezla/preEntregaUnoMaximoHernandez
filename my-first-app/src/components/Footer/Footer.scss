@@ -1,0 +1,17 @@
+.footer__container {
+    background-color: #000000;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    color: #DEDEDE;
+    .footer__section {
+        padding: 40px;
+        h4{
+            border-bottom: 1px solid #DEDEDE;
+        }
+        ul{
+            list-style: none;
+            padding: 10px 0 0 0;
+        }
+    }
+}
