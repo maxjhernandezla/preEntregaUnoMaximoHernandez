@@ -1,0 +1,27 @@
+.sidebar__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #DEDEDE;
+    border-right: 1px solid #a7a5a5;
+    padding: 25px;
+    margin: 0;
+    width: 300px;
+    .list__container {
+        list-style: none;
+        margin: 0;
+        padding: 15px 0 0 0 ;
+        display: flex;
+        flex-direction: column;
+        .list__title {
+            margin: 0;
+            padding: 0 0 15px 0;
+            color: #000000;
+            font-size: large;
+            
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+}

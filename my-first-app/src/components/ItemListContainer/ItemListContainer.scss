@@ -1,6 +1,11 @@
-.itemListContainer {
-    margin: 0 50px 0 50px;
-    background-color: #DEDEDE;
-    height: fit-content;
+.view__container{
+    display: flex;
+    flex-direction: row;
+    .itemListContainer {
+        margin: 0 50px 0 0;
+        background-color: #DEDEDE;
+        height: fit-content;
+
+}    
 
 }
