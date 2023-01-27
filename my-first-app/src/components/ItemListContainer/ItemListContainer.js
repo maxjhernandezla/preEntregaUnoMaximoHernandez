@@ -33,7 +33,7 @@ export const ItemListContainer = () => {
     <div className="view__container">
       <SideBar />
       <div className="itemListContainer">
-        <ItemList products={products} title={categoryId} />
+        <ItemList products={products} />
       </div>
     </div>
   );

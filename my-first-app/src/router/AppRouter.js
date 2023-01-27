@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { LoginContext, LoginProvider } from "../context/LoginContext.js";
+import { BrowserRouter } from "react-router-dom";
+import { LoginContext } from "../context/LoginContext.js";
 import { useContext } from "react";
 import { PrivateRoutes } from "./PrivateRoutes.js";
-import { LoginScreen } from "../components/LoginScreen/LoginScreen.js";
+
 import { PublicRoutes } from "./PublicRoutes.js";
 import { Footer } from "../components/Footer/Footer.js";
 import { Header } from "../components/Header/Header.js";

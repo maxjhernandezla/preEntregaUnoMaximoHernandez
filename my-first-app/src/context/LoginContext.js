@@ -71,19 +71,19 @@ export const LoginProvider = ({ children }) => {
       });
   };
 
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setUser({
-          email: user.email,
-          logged: true,
-          error: null,
-        });
-      } else {
-        logOut();
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   onAuthStateChanged(auth, (user) => {
+  //     if (user) {
+  //       setUser({
+  //         email: user.email,
+  //         logged: true,
+  //         error: null,
+  //       });
+  //     } else {
+  //       logOut();
+  //     }
+  //   });
+  // }, []);
   return (
     <LoginContext.Provider value={{ user, logIn, logOut, singUp }}>
       {children}
