@@ -5,11 +5,11 @@ import { AppRouter } from "./router/AppRouter.js";
 
 function App() {
   return (
-    <LoginProvider>
-      <CartProvider>
+    <CartProvider>
+      <LoginProvider>
         <AppRouter />
-      </CartProvider>
-    </LoginProvider>
+      </LoginProvider>
+    </CartProvider>
   );
 }
 

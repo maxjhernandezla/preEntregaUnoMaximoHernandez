@@ -6,7 +6,7 @@ import { CartWidget } from "../CartWidget/CartWidget";
 import "./Header.scss";
 
 export const Header = () => {
-  const { user, logOut } = useContext(LoginContext);
+  const { user, logOut, Login } = useContext(LoginContext);
 
   return (
     <div className="header">
@@ -15,14 +15,21 @@ export const Header = () => {
           <img src="/img/logo-no-background.png" />
         </Link>
         <CartWidget />
+        {!user.logged ? (
+          <div className="header__welcome">
+            <Link to="/login" className="btn btn-primary">
+              Log In
+            </Link>
+          </div>
+        ) : (
+          <div className="header__welcome">
+            <button className="btn btn-danger" onClick={logOut}>
+              Log Out
+            </button>
+          </div>
+        )}
       </header>
       <Navbar />
-      {/* <div className="header__welcome">
-        <p>Bienvienidx {user.email}</p>
-        <button className="btn btn-danger" onClick={logOut}>
-          Log Out
-        </button>
-      </div> */}
     </div>
   );
 };

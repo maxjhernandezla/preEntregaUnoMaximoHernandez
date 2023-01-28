@@ -4,10 +4,12 @@ import "./ItemDetail.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
+import { LoginContext } from "../../context/LoginContext";
 
 export const ItemDetail = ({ item }) => {
   // const { addToCart } = useContext(CartContext);
   const { addToCart, isInCart } = useContext(CartContext);
+  const { user } = useContext(LoginContext);
 
   const handleAdd = () => {
     const addedItem = { ...item, amount: amount };
@@ -15,6 +17,34 @@ export const ItemDetail = ({ item }) => {
   };
 
   const [amount, setAmount] = useState(1);
+
+  const addIfIsLogged = () => {
+    return !isInCart(item.id) ? (
+      <Button
+        onClick={handleAdd}
+        variant="contained"
+        sx={{
+          margin: "15px 15px 0 15px",
+          backgroundColor: "white",
+          color: "#1565c0",
+          "&:hover": {
+            backgroundColor: "white",
+          },
+        }}
+      >
+        Agregar al carrito
+      </Button>
+    ) : (
+      <Button
+        sx={{ margin: "15px 15px 0 15px" }}
+        to="/cart"
+        variant="contained"
+        component={Link}
+      >
+        Comprar
+      </Button>
+    );
+  };
 
   const navigate = useNavigate();
 
@@ -42,10 +72,11 @@ export const ItemDetail = ({ item }) => {
             />
             <hr />
           </div>
-          {!isInCart(item.id) ? (
+          {!user.logged ? (
             <Button
-              onClick={handleAdd}
               variant="contained"
+              component={Link}
+              to="/login"
               sx={{
                 margin: "15px 15px 0 15px",
                 backgroundColor: "white",
@@ -58,14 +89,7 @@ export const ItemDetail = ({ item }) => {
               Agregar al carrito
             </Button>
           ) : (
-            <Button
-              sx={{ margin: "15px 15px 0 15px" }}
-              to="/cart"
-              variant="contained"
-              component={Link}
-            >
-              Comprar
-            </Button>
+            addIfIsLogged()
           )}
         </div>
       </div>

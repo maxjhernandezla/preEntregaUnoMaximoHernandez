@@ -2,13 +2,15 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
+import { LoginContext } from "../../context/LoginContext";
 export const CartWidget = () => {
   const { cart } = useContext(CartContext);
+  const { user } = useContext(LoginContext);
 
   return (
     <Link to="/cart" className="cart__container">
       <ShoppingCartIcon className="cart" fontSize="medium" />
-      <span className="cart__number">{cart.length}</span>
+      <span className="cart__number">{user.logged ? cart.length : 0}</span>
     </Link>
   );
 };

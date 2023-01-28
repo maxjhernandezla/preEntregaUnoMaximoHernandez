@@ -5,19 +5,25 @@ export const SideBar = () => {
   return (
     <div className="sidebar__container">
       <ul className="list__container">
-        <h6 className="list__title">Nike</h6>
-        <Link>Nike SB</Link>
-        <Link>Air Jordan</Link>
-        <Link>Basketball</Link>
+        <Link to="/productos/Nike" className="list__title">
+          Nike
+        </Link>
+        <Link to="/productos/Nike/Nike-SB">Nike SB</Link>
+        <Link to="/productos/Nike/Jordan">Air Jordan</Link>
+        <Link to="/productos/Nike/Basketball">Basketball</Link>
       </ul>
       <ul className="list__container">
-        <h6 className="list__title">Adidas</h6>
-        <Link>Original</Link>
-        <Link>Run</Link>
-        <Link>Basketball</Link>
+        <Link to="/productos/Adidas" className="list__title">
+          Adidas
+        </Link>
+        <Link to="/productos/Adidas/Originals">Originals</Link>
+        <Link to="/productos/Adidas/Run">Run</Link>
+        <Link to="/productos/Adidas/Basketball">Basketball</Link>
       </ul>
       <ul className="list__container">
-        <h6 className="list__title">Under Armor</h6>
+        <Link to="/productos/Under-Armor" className="list__title">
+          Under Armor
+        </Link>
         <Link>Curry</Link>
         <Link>Project Rock</Link>
       </ul>

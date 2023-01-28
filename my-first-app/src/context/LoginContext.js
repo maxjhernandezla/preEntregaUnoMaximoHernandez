@@ -4,15 +4,8 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { auth } from "../firebase/config.js";
-
-const MOCK_USERS = [
-  {
-    email: "maximo@coderhouse.com",
-    password: "333",
-  },
-];
 
 export const LoginContext = createContext();
 
@@ -36,17 +29,17 @@ export const LoginProvider = ({ children }) => {
         console.log(err);
         setUser({
           email: null,
-          loged: false,
+          logged: false,
           error: err.message,
         });
       });
   };
-
+  console.log(user);
   const logOut = () => {
     signOut(auth).then(() => {
       setUser({
         email: null,
-        loged: false,
+        logged: false,
         error: null,
       });
     });
@@ -65,25 +58,26 @@ export const LoginProvider = ({ children }) => {
         console.log(err);
         setUser({
           email: null,
-          loged: false,
+          logged: false,
           error: err.message,
         });
       });
   };
 
-  // useEffect(() => {
-  //   onAuthStateChanged(auth, (user) => {
-  //     if (user) {
-  //       setUser({
-  //         email: user.email,
-  //         logged: true,
-  //         error: null,
-  //       });
-  //     } else {
-  //       logOut();
-  //     }
-  //   });
-  // }, []);
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser({
+          email: user.email,
+          logged: true,
+          error: null,
+        });
+      } else {
+        logOut();
+      }
+    });
+  }, []);
+
   return (
     <LoginContext.Provider value={{ user, logIn, logOut, singUp }}>
       {children}

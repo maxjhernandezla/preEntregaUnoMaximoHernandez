@@ -1,6 +1,12 @@
 .login__screen {
     display: flex;
     justify-content: center;
+    font-family: "Titillium Web", sans-serif;
+    min-height: 60vh;
+    .login__title {
+        font-family: "Titillium Web", sans-serif;
+        padding: 20px;
+    }
     .login__form {
         display: flex;
         flex-direction: column;

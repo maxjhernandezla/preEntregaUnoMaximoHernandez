@@ -9,25 +9,47 @@ import { SideBar } from "../SideBar/SideBar";
 
 export const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
-  const { categoryId } = useParams();
+  const { brand, categoryId } = useParams();
 
   useEffect(() => {
-    const productosRef = collection(db, "products");
-    const q = categoryId
-      ? query(productosRef, where("category", "==", categoryId))
-      : productosRef;
+    const productsRef = collection(db, "products");
 
-    getDocs(q).then((res) => {
-      setProducts(
-        res.docs.map((doc) => {
-          return {
-            ...doc.data(),
-            id: doc.id,
-          };
-        })
-      );
-    });
-  }, [categoryId]);
+    const qBrand = brand
+      ? query(productsRef, where("brand", "==", brand))
+      : productsRef;
+
+    const qCat = categoryId
+      ? query(
+          productsRef,
+          where("category", "==", categoryId),
+          where("brand", "==", brand)
+        )
+      : productsRef;
+
+    if (brand && categoryId) {
+      getDocs(qCat).then((res) => {
+        setProducts(
+          res.docs.map((doc) => {
+            return {
+              ...doc.data(),
+              id: doc.id,
+            };
+          })
+        );
+      });
+    } else if (brand) {
+      getDocs(qBrand).then((res) => {
+        setProducts(
+          res.docs.map((doc) => {
+            return {
+              ...doc.data(),
+              id: doc.id,
+            };
+          })
+        );
+      });
+    }
+  }, [brand, categoryId]);
 
   return (
     <div className="view__container">
