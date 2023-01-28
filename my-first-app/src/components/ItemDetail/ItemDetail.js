@@ -52,6 +52,11 @@ export const ItemDetail = ({ item }) => {
     navigate(-1);
   };
 
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+
   return (
     <div>
       <div className="detailContainer">
@@ -60,7 +65,7 @@ export const ItemDetail = ({ item }) => {
         </div>
         <div className="descriptionContainer">
           <h3 className="detailTitle">{item.name}</h3>
-          <p className="detailPrice">${item.price}</p>
+          <p className="detailPrice">{formatter.format(item.price)}</p>
           <p className="detailDescription">{item.description}</p>
           <div className="amount">
             <p>Cantidad:</p>

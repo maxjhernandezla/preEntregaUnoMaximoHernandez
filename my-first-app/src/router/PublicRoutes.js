@@ -1,5 +1,4 @@
 import { Route, Routes, Navigate } from "react-router-dom";
-import { Cart } from "../components/Cart/Cart";
 import { ItemDetailContainer } from "../components/ItemDetailContainer/ItemDetailContainer";
 import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer";
 import { LoginScreen } from "../components/LoginScreen/LoginScreen";
@@ -18,7 +17,7 @@ export const PublicRoutes = () => {
       <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
-      <Route path="/cart" element={<Cart />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 };

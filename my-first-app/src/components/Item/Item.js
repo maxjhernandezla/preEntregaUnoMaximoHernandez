@@ -6,6 +6,11 @@ import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 
 export const Item = ({ prod, item }) => {
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+
   return (
     <Card
       key={prod.id}
@@ -13,15 +18,15 @@ export const Item = ({ prod, item }) => {
       sx={{
         maxWidth: 250,
         height: 500,
-        borderRadius: "2%",
+        // borderRadius: "2%",
         margin: "10px",
-        boxShadow: "7px 11px 11px 1px rgba(0,0,0,0.29)",
-        webkitBoxShadow: "7px 11px 11px 1px rgba(0,0,0,0.29)",
-        mozBoxShadow: "7px 11px 11px 1px rgba(0,0,0,0.29)",
         "&:hover": {
-          boxShadow: "7px 11px 11px 1px rgba(0,0,0,0.56)",
-          webkitBoxShadow: "7px 11px 11px 1px rgba(0,0,0,0.56)",
-          mozBoxShadow: "7px 11px 11px 1px rgba(0,0,0,0.56)",
+          boxShadow: "7px 11px 11px 1px rgba(0,0,0,0.29)",
+          webkitBoxShadow: "7px 11px 11px 1px rgba(0,0,0,0.29)",
+          mozBoxShadow: "7px 11px 11px 1px rgba(0,0,0,0.29)",
+          // boxShadow: "7px 11px 11px 1px rgba(0,0,0,0.56)",
+          // webkitBoxShadow: "7px 11px 11px 1px rgba(0,0,0,0.56)",
+          // mozBoxShadow: "7px 11px 11px 1px rgba(0,0,0,0.56)",
         },
       }}
     >
@@ -50,7 +55,7 @@ export const Item = ({ prod, item }) => {
             justifyContent: "flex-end",
           }}
         >
-          <strong>Precio: ${prod.price}</strong>
+          <strong>Precio: {formatter.format(prod.price)}</strong>
         </Typography>
       </CardContent>
       <CardActions>
@@ -59,8 +64,9 @@ export const Item = ({ prod, item }) => {
           to={`/detail/${prod.id}`}
           className="btn btn-primary"
           size="small"
+          variant="contained"
         >
-          Learn More
+          Ver más
         </Button>
       </CardActions>
     </Card>

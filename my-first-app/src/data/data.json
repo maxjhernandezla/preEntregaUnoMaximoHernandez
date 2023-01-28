@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "Air Jordan 1 Mid",
     "brand": "Nike",
     "description": "Inspired by the original AJ1, the Air Jordan 1 Mid offers fans a chance to follow in MJ's footsteps. Fresh color trims the clean, classic materials, imbuing modernity into a classic design.",
@@ -10,7 +9,6 @@
     "stock": 40
   },
   {
-    "id": 2,
     "name": "Air Jordan 1 Retro High OG",
     "brand": "Nike",
     "description": "The Air Jordan 1 Retro High remakes the classic sneaker, giving you a fresh look with a familiar feel. Premium materials with new colors and textures give modern expression to an all-time favorite.",
@@ -20,7 +18,6 @@
     "stock": 40
   },
   {
-    "id": 3,
     "name": "Air Jordan 1 Low",
     "brand": "Nike",
     "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a clean, classic look that's familiar yet always fresh. With an iconic design that pairs perfectly with any 'fit, these kicks ensure you'll always be on point.",
@@ -30,7 +27,6 @@
     "stock": 40
   },
   {
-    "id": 4,
     "name": "Jordan Series Mid",
     "brand": "Nike",
     "description": "Classic meets modern in this fresh take on a Jordan Brand essential. Durable leather and suede are bolstered by lightweight synthetics for extra support. The iconic midtop silhouette is more breathable than ever with a perforated sockliner. Plus, inspirational messages nodding to MJ's origin story are incorporated into the design, adding meaning to every step.",
@@ -40,7 +36,6 @@
     "stock": 40
   },
   {
-    "id": 5,
     "name": "Nike SB Zoom Blazer Mid",
     "brand": "Nike",
     "description": "The Blazer Mid is an iconic hoops shoe tailored to the needs of the modern skateboarder. Durable leather is paired with tacky rubber for flexible grip and comfort that lasts.",
@@ -50,7 +45,6 @@
     "stock": 40
   },
   {
-    "id": 6,
     "name": "Nike SB Chron 2 Canvas",
     "brand": "Nike",
     "description": "The Nike SB Chron 2 Canvas is the newest member of the Chron family. The revamped design includes a reshaped collar and heel for an improved fit—all while maintaining the comfort and performance you expect from Nike SB.",
@@ -60,7 +54,6 @@
     "stock": 40
   },
   {
-    "id": 7,
     "name": "Nike SB Dunk High Pro",
     "brand": "Nike",
     "description": "Varsity vibes never go out of style. The Nike SB Dunk High Pro pairs premium materials with classic color blocking for an iconic look—reimagined for skate. Orange accents finish it off, nodding to the color of Nike's original shoebox from 1971.",
@@ -70,7 +63,6 @@
     "stock": 40
   },
   {
-    "id": 8,
     "name": "Nike SB Blazer Court Mid Premium",
     "brand": "Nike",
     "description": "With its tonal design and classic materials, the Blazer Court Mid updates the retro hoops vibe for skate. Its reinforced ollie zone and flexible sole help it last through your toughest sessions.",
@@ -80,7 +72,6 @@
     "stock": 40
   },
   {
-    "id": 9,
     "name": "Zoom Freak 4",
     "brand": "Nike",
     "description": "Giannis is an incessant storm of stamina and skill that keeps coming at opponents for 4 quarters or more. The forward-thinking design of his latest signature shoe helps propel you down the court in a lightweight fit that moves with you. It can handle quick changes in direction on both sides of the floor, giving you side-to-side stability and multidirectional traction as you Euro step to the hoop.",
@@ -90,7 +81,6 @@
     "stock": 40
   },
   {
-    "id": 10,
     "name": "LeBron XX 'Stocking Stuffer'",
     "brand": "Nike",
     "description": "Bah, humbug! Not with the LeBron 20 “Stocking Stuffer” under the tree. Revisiting the iconic lineup of the King’s Christmas Day kicks, this design’s festive array of graphics and colors creates a mash-up of Christmas’ past. From dimes to dunks, this is no ugly sweater—its lightweight, low-to-the-ground and ultra-cushioned design is fresher than pine and cozier than a cup of cocoa by the fireside. Hope you’ve been nice.",
@@ -100,7 +90,6 @@
     "stock": 40
   },
   {
-    "id": 11,
     "name": "Nike Cosmic Unity 2",
     "brand": "Nike",
     "description": "Celebrate the love and joy of the game with the Nike Cosmic Unity 2. Made with at least 20% recycled content by weight, it provides enhanced responsiveness and support. This shoe will help keep you fresh and secure without overloading it with extra ounces, so that you can focus on locking down the perimeter defensively or starting the fast break after a rebound.",
@@ -110,7 +99,6 @@
     "stock": 40
   },
   {
-    "id": 12,
     "name": "Luka 1",
     "brand": "Nike",
     "description": "Designed for #77 and made for every athlete craving speed and efficiency, Luka's debut delivers the goods. The first shoe with full-length Formula 23 foam, it has an ultra-supportive fit crafted with the step-back in mind. Meanwhile, strong and lightweight Flight Wire cables keep you feeling contained, whether you're playing indoors or out. This is the assist you've been waiting for—get out there and make your shot.",
@@ -120,7 +108,6 @@
     "stock": 40
   },
   {
-    "id": 13,
     "name": "KD Trey 5 X",
     "brand": "Nike",
     "description": "With its lightweight upper and plush support system, the KD Trey 5 X can help you float like KD, waiting for the perfect moment to drive to the hoop. A secure midfoot strap is suited for scoring binges and defensive stands, so that you can lock in and keep winning.",
@@ -130,7 +117,6 @@
     "stock": 40
   },
   {
-    "id": 14,
     "name": "PG 6",
     "brand": "Nike",
     "description": "Paul George does it all on the court, comfortably. He can take it to the hole, drive and dish, catch and shoot—always smooth, frequently devastating. Thanks to breathable mesh and responsive foam, his signature PG 6 is designed to feel light and buoyant like you're walking on clouds.",
@@ -140,8 +126,7 @@
     "stock": 40
   },
   {
-    "id": 15,
-    "name": "TOP TEN RB SHOES",
+    "name": "Top Ten RB Shoes",
     "brand": "Adidas",
     "description": "These adidas high top shoes got their name from — no surprise — being reserved for the top ten players in basketball way back in the day. Far from the hardwood now, they still pulse with that B-ball DNA that made people first take notice. Easy colors on the soft, full grain leather upper add to the vintage vibes.",
     "image": "/img/TOP-TEN-RB-SHOES.jpeg",
@@ -150,8 +135,7 @@
     "stock": 40
   },
   {
-    "id": 16,
-    "name": "STAN SMITH SHOES",
+    "name": "Stan Smith Shoes",
     "brand": "Adidas",
     "description": "Timeless appeal. Effortless style. Everyday versatility. For over 50 years and counting, adidas Stan Smith Shoes have continued to hold their place as an icon. This pair shows off a fresh redesign as part of adidas' commitment to use only recycled polyester by 2024. With a vegan upper and an outsole made from rubber waste, they still have iconic style, they're just made with the planet in mind.",
     "image": "/img/STAN-SMITH-SHOES.jpeg",
@@ -160,8 +144,7 @@
     "stock": 40
   },
   {
-    "id": 17,
-    "name": "SUPERSTAR SHOES",
+    "name": "Superstar Shoes",
     "brand": "Adidas",
     "description": "Originally made for basketball courts in the '70s. Celebrated by hip hop royalty in the '80s. The adidas Superstar shoe is now a lifestyle staple for streetwear enthusiasts. The world-famous shell toe feature remains, providing style and protection. Just like it did on the B-ball courts back in the day.",
     "image": "/img/SUPERSTAR-SHOES.jpeg",
@@ -170,8 +153,7 @@
     "stock": 40
   },
   {
-    "id": 18,
-    "name": "FORUM LOW SHOES",
+    "name": "Forum Low Shoes",
     "brand": "Adidas",
     "description": "When the adidas Forum debuted in '84, it quickly dominated the basketball scene — and for good reason. It's forward-thinking tech raised the bar on the hardwood, and its swagger made waves off it. Back in a low top iteration with premium leather and all the classic details, these shoes honor heritage while keeping your style fresh. We even removed the top strap to let that crisscross ankle and tongue label really shine.",
     "image": "/img/FORUM-LOW-SHOES.jpeg",
@@ -180,8 +162,7 @@
     "stock": 40
   },
   {
-    "id": 19,
-    "name": "ADIZERO ROSE 15 LOW RESTOMOD",
+    "name": "Adizero Rose 15 Low Restomod",
     "brand": "Adidas",
     "description": "These Adizero Rose Restomod shoes from adidas Basketball are an ode to Derrick's early career. Classic D-Rose details are enhanced with Restomod upgrades, like a Lightstrike midsole for ultra-lightweight cushioning and a Puremotion outsole for superior grip. The shoes built for one of the fastest players are now lighter than ever.",
     "image": "/img/ADIZERO-ROSE-1.5-LOW-RESTOMOD-BASKETBALL-SHOES.jpeg",
@@ -190,8 +171,7 @@
     "stock": 40
   },
   {
-    "id": 20,
-    "name": "HARDEN VOL. 6",
+    "name": "Harden Vol. 6",
     "brand": "Adidas",
     "description": "Strike when your opponent least expects it. Drive to the rim, pull up from deep and leave defenders in your wake — just like James Harden. These adidas basketball shoes are made with BOOST for the energy return you need from the opening whistle to those grueling last seconds of overtime. Bands on the forefoot and heel give you a locked-down feel all game long.",
     "image": "/img/HARDEN-VOL-6-BASKETBALL-SHOES.jpeg",
@@ -200,8 +180,7 @@
     "stock": 40
   },
   {
-    "id": 21,
-    "name": "TRAE YOUNG 20",
+    "name": "Trae Young 20",
     "brand": "Adidas",
     "description": "One of the coldest on the hardwood, Trae Young is absolutely fearless. He'll take any shot at any time, and when it's all on the line, look out, because Trae is about to steal the show. The newest signature shoes from adidas Basketball and Trae Young are all about agility and speed, the two elements that make Trae so dynamic. BOOST and Lightstrike work in tandem with an adaptive SCK360, semi-laceless upper to deliver enhanced comfort and game-changing support.",
     "image": "/img/TRAE-YOUNG-20-BASKETBALL-SHOES.jpeg",
@@ -210,13 +189,148 @@
     "stock": 40
   },
   {
-    "id": 22,
-    "name": "DAME CERTIFIED",
+    "name": "Dame Certified",
     "brand": "Adidas",
     "description": "Damian Lillard's style mixes basketball and hip hop. He dominates the hardwood the same way he dominates the recording studio. The Dame Certified Shoes from adidas Basketball build on Dame D.O.L.LA.'s legacy. They feature a lightweight Bounce midsole for elevated cushioning, a breathable upper that keeps the air flowing and all the signature details that celebrate the greatness of Damian Lillard.",
     "image": "/img/DAME-CERTIFIED-BASKETBALL-SHOES.jpeg",
     "category": "Basketball",
     "price": 47500,
     "stock": 40
+  },
+  {
+    "name": "Curry Flow 10 'Curryfornia'",
+    "brand": "UnderArmor",
+    "description": "Change directions—fast. UA Flow cushioning is totally rubberless, making these shoes light and ridiculously grippy. The UA Warp upper works like mini seat belts locking you in. Together, you get stop and go speed + control.",
+    "image": "/img/Curry-1-Retro-'Black-History-Month'.jpeg",
+    "category": "Curry",
+    "price": 35000,
+    "stock": 98
+  },
+  {
+    "name": "Curry 1 Retro 'Black History Month'",
+    "brand": "UnderArmor",
+    "description": "Change directions—fast. UA Flow cushioning is totally rubberless, making these shoes light and ridiculously grippy. The UA Warp upper works like mini seat belts locking you in. Together, you get stop and go speed + control.",
+    "image": "/img/Curry-1-Retro-'Black-History-Month'.jpeg",
+    "category": "Curry",
+    "price": 42000,
+    "stock": 68
+  },
+  {
+    "name": "Curry Flow 10 'More Magic'",
+    "brand": "UnderArmor",
+    "description": "Change directions—fast. UA Flow cushioning is totally rubberless, making these shoes light and ridiculously grippy. The UA Warp upper works like mini seat belts locking you in. Together, you get stop and go speed + control.",
+    "image": "/img/Curry-Flow-10-'More-Magic'.jpeg",
+    "category": "Curry",
+    "price": 35700,
+    "stock": 98
+  },
+  {
+    "id": 26,
+    "name": "Curry Flow 10 'Sour Then Sweet'",
+    "brand": "UnderArmor",
+    "description": "Change directions—fast. UA Flow cushioning is totally rubberless, making these shoes light and ridiculously grippy. The UA Warp upper works like mini seat belts locking you in. Together, you get stop and go speed + control.",
+    "image": "/img/Curry-Flow-10-'Sour-Then-Sweet'.jpeg",
+    "category": "Curry",
+    "price": 62500,
+    "stock": 75
+  },
+  {
+    "name": "Curry Flow 10 'Iron Sharpens Iron'",
+    "brand": "UnderArmor",
+    "description": "Change directions—fast. UA Flow cushioning is totally rubberless, making these shoes light and ridiculously grippy. The UA Warp upper works like mini seat belts locking you in. Together, you get stop and go speed + control.",
+    "image": "/img/Curry-Flow-10-'Iron-Sharpens-Iron'.jpeg",
+    "category": "Curry",
+    "price": 52000,
+    "stock": 69
+  },
+  {
+    "name": "Curry Flow 9",
+    "brand": "UnderArmor",
+    "description": "You've never felt shoes like these before. UA Flow is totally rubberless, making them light and ridiculously grippy. UA Warp upper works like mini seat belts locking you in. Together, you get stop and go speed + control.",
+    "image": "/img/Curry-Flow-9.jpeg",
+    "category": "Curry",
+    "price": 26800,
+    "stock": 99
+  },
+  {
+    "name": "Curry HOVR™ Splash",
+    "brand": "UnderArmor",
+    "description": "Change directions—fast. UA Flow cushioning is totally rubberless, making these shoes light and ridiculously grippy. The UA Warp upper works like mini seat belts locking you in. Together, you get stop and go speed + control.",
+    "image": "/img/Curry-HOVR-Splash.jpeg",
+    "category": "Curry",
+    "price": 58000,
+    "stock": 85
+  },
+  {
+    "name": "Veterans Day Training Shoes",
+    "brand": "UnderArmor",
+    "description": "The Project Rock 5s are the most innovative training shoes we've ever made—they give you power, energy, support with an amazing comfort level.",
+    "image": "/img/Veterans-Day-Training-Shoes.jpeg",
+    "category": "Project-Rock",
+    "price": 32000,
+    "stock": 40
+  },
+  {
+    "name": "Black Adam Training Shoes",
+    "brand": "UnderArmor",
+    "description": "The Project Rock 5s are the most innovative training shoes we've ever made—they give you power, energy, support with an amazing comfort level.",
+    "image": "/img/Black-Adam-Training-Shoes.jpeg",
+    "category": "Project-Rock",
+    "price": 35600,
+    "stock": 56
+  },
+  {
+    "name": "UA TriBase™ Reign 4 Training Shoes",
+    "brand": "UnderArmor",
+    "description": "The Project Rock 5s are the most innovative training shoes we've ever made—they give you power, energy, support with an amazing comfort level.",
+    "image": "/img/UA-TriBase-Reign-4-Training-Shoes.jpeg",
+    "category": "Project-Rock",
+    "price": 4200,
+    "stock": 36
+  },
+  {
+    "name": "Grade School 4 Training Shoes",
+    "brand": "UnderArmor",
+    "description": "The Project Rock 5s are the most innovative training shoes we've ever made—they give you power, energy, support with an amazing comfort level.",
+    "image": "/img/Grade-School-4-Training-Shoes.jpeg",
+    "category": "Project-Rock",
+    "price": 18000,
+    "stock": 99
+  },
+  {
+    "name": "Adizero SL Running",
+    "brand": "Adidas",
+    "description": "adidas ADIZERO SL is a fast daily training shoe, packed with key ingredients and design markers from our world record breaking Adizero franchise. The midsole consists of a full length lightweight Lightstrike EVA chassis which provides a balance of stability, resilience & cushioning. This combines with our world renowned Lightstrike Pro foam and a fast, training upper made of a super soft engineered mesh zoned in key areas. An overtly padded heel & tongue construction providing improved step-in and ride comfort together with our ADIZERO heel-blinker sign off, complete the upper construction. Last, the full rubber outsole provides traction on any surface – in any condition. Made with a series of recycled materials, this upper features at least 50% recycled content. This product represents just one of our solutions to help end plastic waste.",
+    "image": "/img/Adizero-SL-Running-Shoes.jpeg",
+    "category": "Running",
+    "price": 28900,
+    "stock": 250
+  },
+  {
+    "name": "Ultra 4DFWD",
+    "brand": "Adidas",
+    "description": "You run. We innovate to make it feel easier. That's where the adidas Ultra 4DFWD shoes come in, combining our adidas 4D midsole with the beloved adidas PRIMEKNIT+ upper. Their unique lattice structure compresses at impact, redirecting your energy into forward motion. Whether you're running near or far, fast or slow, you get a smooth ride that feels more like gliding than pounding on pavement.",
+    "image": "/img/Ultra-4DFWD.jpeg",
+    "category": "Running",
+    "price": 26000,
+    "stock": 75
+  },
+  {
+    "name": "Adizero Takumi Sen 9",
+    "brand": "Adidas",
+    "description": "It's race day. Chase that personal record in these adidas running shoes that are built for speed. Ultralight Lightstrike Pro cushioning energizes your stride on the road and on the track. Carbon-infused ENERGYRODS add stiffness for snappy toe-offs to help you get to the finish line fast.",
+    "image": "/img/Adizero-Takumi-Sen-9.jpeg",
+    "category": "Running",
+    "price": 23000,
+    "stock": 200
+  },
+  {
+    "name": "Ultraboost 22",
+    "brand": "Adidas",
+    "description": "Even on your busiest days, running is a priority. These adidas trainers make every mile count, thanks to the incredible energy return of BOOST cushioning. The Linear Energy Push system increases stability for a smooth and steady stride, and the Stretchweb outsole delivers natural flex to keep you moving comfortably, no matter your distance or pace.",
+    "image": "/img/Ultraboost-22.jpeg",
+    "category": "Running",
+    "price": 45000,
+    "stock": 69
   }
 ]

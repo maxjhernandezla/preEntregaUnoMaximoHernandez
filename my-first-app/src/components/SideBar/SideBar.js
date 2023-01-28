@@ -17,15 +17,15 @@ export const SideBar = () => {
           Adidas
         </Link>
         <Link to="/productos/Adidas/Originals">Originals</Link>
-        <Link to="/productos/Adidas/Run">Run</Link>
+        <Link to="/productos/Adidas/Running">Running</Link>
         <Link to="/productos/Adidas/Basketball">Basketball</Link>
       </ul>
       <ul className="list__container">
-        <Link to="/productos/Under-Armor" className="list__title">
+        <Link to="/productos/UnderArmor" className="list__title">
           Under Armor
         </Link>
-        <Link>Curry</Link>
-        <Link>Project Rock</Link>
+        <Link to="/productos/UnderArmor/Curry">Curry</Link>
+        <Link to="/productos/UnderArmor/Project-Rock">Project Rock</Link>
       </ul>
     </div>
   );
