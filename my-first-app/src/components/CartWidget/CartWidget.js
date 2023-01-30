@@ -3,14 +3,17 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import { LoginContext } from "../../context/LoginContext";
+import "./CartWidget.scss";
 export const CartWidget = () => {
   const { cart } = useContext(CartContext);
   const { user } = useContext(LoginContext);
 
   return (
     <Link to="/cart" className="cart__container">
-      <ShoppingCartIcon className="cart" fontSize="medium" />
-      <span className="cart__number">{user.logged ? cart.length : 0}</span>
+      <ShoppingCartIcon className="cart" fontSize="small" />
+      {cart.length > 0 && (
+        <span className="cart__number">{user.logged && cart.length}</span>
+      )}
     </Link>
   );
 };

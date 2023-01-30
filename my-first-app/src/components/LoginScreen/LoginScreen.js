@@ -25,12 +25,13 @@ export const LoginScreen = () => {
 
   return (
     <div className="login__screen">
-      <div>
-        <h2 className="login__title">Login</h2>
-        <hr />
+      <div className="form__container">
+        <h3 className="login__title">Login</h3>
+
         <form onSubmit={handleSubmit} className="login__form">
           <input
             className="form-control my-2"
+            placeholder={"E-mail Address"}
             // helperText="Please enter your email"
             type={"email"}
             value={values.email}
@@ -40,15 +41,18 @@ export const LoginScreen = () => {
           <input
             // helperText="Please enter your password"
             type={"password"}
+            placeholder={"Password"}
             className="form-control my-2"
             value={values.password}
             onChange={handleInputChange}
             name="password"
           />
           {user.error && <p className="error">{user.error}</p>}
-          <button className="btn btn-primary">Ingresar</button>
+          <button className="btn">Ingresar</button>
         </form>
-        <Link to="/register">No tengo cuenta, quiero registrarme</Link>
+        <Link sx={{ color: "black", textDecoration: "none" }} to="/register">
+          No tengo cuenta, quiero registrarme
+        </Link>
       </div>
     </div>
   );

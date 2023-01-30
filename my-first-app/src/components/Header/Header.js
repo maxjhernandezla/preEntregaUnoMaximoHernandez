@@ -14,20 +14,22 @@ export const Header = () => {
         <Link to="/" className="header__logo">
           <img src="/img/logo-no-background.png" />
         </Link>
-        <CartWidget />
-        {!user.logged ? (
-          <div className="header__welcome">
-            <Link to="/login" className="btn btn-primary">
-              Log In
-            </Link>
-          </div>
-        ) : (
-          <div className="header__welcome">
-            <button className="btn btn-danger" onClick={logOut}>
-              Log Out
-            </button>
-          </div>
-        )}
+        <div className="log__cart">
+          {!user.logged ? (
+            <div className="header__welcome">
+              <Link to="/login" className="btn">
+                Log In
+              </Link>
+            </div>
+          ) : (
+            <div className="header__welcome">
+              <button className="btn" onClick={logOut}>
+                Log Out
+              </button>
+            </div>
+          )}
+          <CartWidget />
+        </div>
       </header>
       <Navbar />
     </div>

@@ -1,9 +1,26 @@
 .login__screen {
     display: flex;
     justify-content: center;
-    .login__form {
-        display: flex;
-        flex-direction: column;
-        min-width: 450px;
+    font-family: "Titillium Web", sans-serif;
+    .form__container{
+        min-height: 60vh;
+        .login__title {
+            font-family: "Titillium Web", sans-serif;
+            padding: 20px 0 10px 0;
+        }
+        .login__form {
+            display: flex;
+            flex-direction: column;
+            min-width: 450px;
+        }
+    }
+    .btn {
+        background-color: black;
+        color: #DEDEDE;
+        margin: 20px 0 20px 0;
+    }
+    a {
+        color: black;
+        margin-top: 20px;
     }
 }
