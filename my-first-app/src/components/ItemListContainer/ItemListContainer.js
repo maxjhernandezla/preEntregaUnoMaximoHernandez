@@ -49,7 +49,7 @@ export const ItemListContainer = () => {
         );
       });
     }
-  }, [brand, categoryId]);
+  }, [brand, categoryId, products]);
 
   return (
     <div className="view__container">

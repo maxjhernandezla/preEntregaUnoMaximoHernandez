@@ -12,6 +12,7 @@ import { useContext, useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import { db } from "../../firebase/config";
+import "./Checkout.scss";
 
 export const Checkout = () => {
   const { cart, totalCart, emptyCart } = useContext(CartContext);
@@ -100,7 +101,6 @@ export const Checkout = () => {
   return (
     <div className="container my-5">
       <h2>Terminar mi compra</h2>
-      <hr />
       <form onSubmit={handleSubmit}>
         <input
           className="form-control my-2"

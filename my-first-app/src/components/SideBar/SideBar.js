@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./SideBar.scss";
 
-export const SideBar = () => {
+export const SideBar = ({}) => {
   return (
     <div className="sidebar__container">
       <ul className="list__container">
