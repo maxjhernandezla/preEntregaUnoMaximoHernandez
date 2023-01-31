@@ -26,9 +26,10 @@ export const ItemDetail = ({ item }) => {
         sx={{
           margin: "15px 15px 0 15px",
           backgroundColor: "white",
-          color: "#1565c0",
+          color: "black",
           "&:hover": {
-            backgroundColor: "white",
+            backgroundColor: "black",
+            color: "#DEDEDE",
           },
         }}
       >
@@ -36,7 +37,15 @@ export const ItemDetail = ({ item }) => {
       </Button>
     ) : (
       <Button
-        sx={{ margin: "15px 15px 0 15px" }}
+        sx={{
+          margin: "15px 15px 0 15px",
+          backgroundColor: "white",
+          color: "black",
+          "&:hover": {
+            backgroundColor: "black",
+            color: "#DEDEDE",
+          },
+        }}
         to="/cart"
         variant="contained"
         component={Link}
@@ -68,8 +77,6 @@ export const ItemDetail = ({ item }) => {
           <p className="detailPrice">{formatter.format(item.price)}</p>
           <p className="detailDescription">{item.description}</p>
           <div className="amount">
-            <p>Cantidad:</p>
-
             <ItemCount
               counter={amount}
               max={item.stock}
@@ -85,9 +92,10 @@ export const ItemDetail = ({ item }) => {
               sx={{
                 margin: "15px 15px 0 15px",
                 backgroundColor: "white",
-                color: "#1565c0",
+                color: "black",
                 "&:hover": {
-                  backgroundColor: "white",
+                  backgroundColor: "black",
+                  color: "#DEDEDE",
                 },
               }}
             >
@@ -100,8 +108,16 @@ export const ItemDetail = ({ item }) => {
       </div>
       <Button
         onClick={goBack}
-        sx={{ margin: "15px 15px 0 15px" }}
         variant="contained"
+        sx={{
+          margin: "15px 15px 0 15px",
+          backgroundColor: "white",
+          color: "black",
+          "&:hover": {
+            backgroundColor: "black",
+            color: "#DEDEDE",
+          },
+        }}
       >
         Volver
       </Button>
