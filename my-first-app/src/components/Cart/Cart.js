@@ -11,8 +11,49 @@ export const Cart = () => {
   console.log(totalCart());
   console.log(shipping);
 
+  if (cart.length == 0) {
+    return (
+      <div className="cart__detail__container container my-5">
+        <div className="cart__display">
+          <div>
+            <h2 className="empty__title">Parece que tu carrito está vacío</h2>
+          </div>
+          <div>
+            <img className="empty__image" src="./img/emptyCart.png" />
+          </div>
+        </div>
+        <div className="order__display">
+          <div className="text__container">
+            <h4>Resumen de la orden</h4>
+            <div className="order__text">
+              <p>Subtotal ({cart.length}):</p>
+              <p>${totalCart()}</p>
+            </div>
+            <div className="order__text">
+              <p>Costo del envío:</p>
+              <p>${shipping}</p>
+            </div>
+            <div className="order__text">
+              <p>Total:</p>
+              <p>${totalCart() + shipping}</p>
+            </div>
+          </div>
+          {/* <hr />
+          <div className="button__container">
+            <Button variant="contained" component={Link} to="/checkout">
+              Terminar mi compra
+            </Button>
+            <Button onClick={emptyCart} variant="contained">
+              Vaciar carrito
+            </Button>
+          </div> */}
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="container my-5">
+    <div className="cart__detail__container container my-5">
       <div className="cart__display">
         <h2>Tu compra</h2>
         {cart.map((item) => (
@@ -74,3 +115,42 @@ export const Cart = () => {
     </div>
   );
 };
+
+{
+  /* <div className="cart__detail__container">
+        <div className="cart__display">
+          <div>
+            <h2 className="empty__title">Parece que tu carrito está vacío</h2>
+          </div>
+          <div>
+            <img className="empty__image" src="./img/emptyCart.png" />
+          </div>
+        </div>
+        <div className="order__display">
+          <div className="text__container">
+            <h4>Resumen de la orden</h4>
+            <div className="order__text">
+              <p>Subtotal ({cart.length}):</p>
+              <p>${totalCart()}</p>
+            </div>
+            <div className="order__text">
+              <p>Costo del envío:</p>
+              <p>${shipping}</p>
+            </div>
+            <div className="order__text">
+              <p>Total:</p>
+              <p>${totalCart() + shipping}</p>
+            </div>
+          </div>
+          <hr />
+          <div className="button__container">
+            <Button variant="contained" component={Link} to="/checkout">
+              Terminar mi compra
+            </Button>
+            <Button onClick={emptyCart} variant="contained">
+              Vaciar carrito
+            </Button>
+          </div>
+        </div>
+      </div> */
+}

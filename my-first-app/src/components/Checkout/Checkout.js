@@ -21,18 +21,22 @@ export const Checkout = () => {
     name: "",
     address: "",
     email: "",
+    secondEmail: "",
   });
 
   const handleInputChange = (e) => {
+    const { name, value } = e.target;
     setValues({
       ...values,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     //HACER UNA VALIDACION PARA QUE LA ORDEN NO TENGA DATOS INCOMPLETOS O INVÁLIDOS
+    if (values.email === values.secondEmail) {
+    }
     const order = {
       client: values,
       items: cart,
@@ -76,19 +80,16 @@ export const Checkout = () => {
           })
           .catch((error) => console.log(error));
       });
-    } else {
-      alert("no hay stock");
     }
   };
 
   if (orderId) {
     return (
-      <div className="container my-5">
+      <div className="checkout__container container my-5">
         <h3>Tu compra fue exitosa</h3>
-        <hr />
         <p>Tu número de orden es: {orderId}</p>
         <p>Muchas gracias</p>
-        <Link className="btn btn-primary" to="/">
+        <Link className="btn checkout__btn" to="/">
           Volver
         </Link>
       </div>
@@ -99,8 +100,8 @@ export const Checkout = () => {
   //   return <Navigate to="/" />;
   // }
   return (
-    <div className="container my-5">
-      <h2>Terminar mi compra</h2>
+    <div className="container checkout__container my-5">
+      <h3>Terminar mi compra</h3>
       <form onSubmit={handleSubmit}>
         <input
           className="form-control my-2"
@@ -128,7 +129,15 @@ export const Checkout = () => {
           value={values.email}
           placeholder="Tu correo electrónico"
         />
-        <button className="btn btn-primary">Enviar</button>
+        <input
+          className="form-control my-2"
+          onChange={handleInputChange}
+          type="email"
+          name="secondEmail"
+          value={values.secondEmail}
+          placeholder="Tu correo electrónico"
+        />
+        <button className="checkout__btn btn">Enviar</button>
       </form>
     </div>
   );

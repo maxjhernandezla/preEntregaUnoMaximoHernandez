@@ -26,7 +26,6 @@ export const LoginProvider = ({ children }) => {
         });
       })
       .catch((err) => {
-        console.log(err);
         setUser({
           email: null,
           logged: false,
@@ -34,7 +33,7 @@ export const LoginProvider = ({ children }) => {
         });
       });
   };
-  console.log(user);
+
   const logOut = () => {
     signOut(auth).then(() => {
       setUser({
@@ -55,7 +54,6 @@ export const LoginProvider = ({ children }) => {
         });
       })
       .catch((err) => {
-        console.log(err);
         setUser({
           email: null,
           logged: false,

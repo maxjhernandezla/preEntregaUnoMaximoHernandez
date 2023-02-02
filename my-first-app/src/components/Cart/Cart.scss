@@ -1,8 +1,16 @@
-.container {
+.cart__detail__container {
         display: flex;
         flex-direction: row;
+        min-height: 60vh;
+        .empty__image {
+            width: 800px;
+        }
         .cart__display {
-            min-width: 70vh;
+            min-width: 60vw;
+            margin-left: 50px;
+            // .empty__title {
+            //     margin-top: 20px;
+            // }
             .cart__container {
                 display: flex;
                 flex-direction: row;

@@ -20,6 +20,9 @@ export const Header = () => {
               <Link to="/login" className="btn">
                 Log In
               </Link>
+              <Link to="/register" className="btn">
+                Register
+              </Link>
             </div>
           ) : (
             <div className="header__welcome">

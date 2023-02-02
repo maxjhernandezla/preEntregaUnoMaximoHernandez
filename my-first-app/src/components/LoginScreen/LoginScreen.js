@@ -26,7 +26,7 @@ export const LoginScreen = () => {
   return (
     <div className="login__screen">
       <div className="form__container">
-        <h3 className="login__title">Login</h3>
+        <h3 className="login__title">Loguéate</h3>
 
         <form onSubmit={handleSubmit} className="login__form">
           <input

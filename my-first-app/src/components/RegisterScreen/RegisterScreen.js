@@ -26,7 +26,7 @@ export const RegisterScreen = () => {
   return (
     <div className="login__screen">
       <div className="form__container">
-        <h3 className="login__title">Sign up</h3>
+        <h3 className="login__title">Regístrate</h3>
 
         <form onSubmit={handleSubmit} className="login__form">
           <input

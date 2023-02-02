@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 import "./Item.scss";
 
-export const Item = ({ prod, item }) => {
+export const Item = ({ prod }) => {
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -59,7 +59,7 @@ export const Item = ({ prod, item }) => {
         <Button
           component={Link}
           to={`/detail/${prod.id}`}
-          className="btn btn-primary"
+          className="btn"
           size="small"
           variant="contained"
           sx={{

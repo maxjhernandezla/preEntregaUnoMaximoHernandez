@@ -1,1 +1,15 @@
-
+.checkout__container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 60vh;
+    h3 {
+        margin: 15px 0 30px 0;
+    }
+    .checkout__btn {
+        background-color: black;
+        color: #DEDEDE;
+        width: 100%;
+        margin-top: 20px;
+    }
+}

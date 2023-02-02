@@ -5,14 +5,14 @@ import { CartContext } from "../../context/CartContext";
 import { LoginContext } from "../../context/LoginContext";
 import "./CartWidget.scss";
 export const CartWidget = () => {
-  const { cart } = useContext(CartContext);
+  const { cart, cartItems } = useContext(CartContext);
   const { user } = useContext(LoginContext);
 
   return (
     <Link to="/cart" className="cart__container">
       <ShoppingCartIcon className="cart" fontSize="small" />
       {cart.length > 0 && (
-        <span className="cart__number">{user.logged && cart.length}</span>
+        <span className="cart__number">{user.logged && cartItems()}</span>
       )}
     </Link>
   );
