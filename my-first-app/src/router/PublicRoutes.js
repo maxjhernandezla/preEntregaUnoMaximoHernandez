@@ -14,6 +14,7 @@ export const PublicRoutes = () => {
         path="/productos/:brand/:categoryId"
         element={<ItemListContainer />}
       />
+
       <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />

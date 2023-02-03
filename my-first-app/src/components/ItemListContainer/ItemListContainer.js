@@ -10,7 +10,7 @@ import { SideBar } from "../SideBar/SideBar";
 export const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const { brand, categoryId } = useParams();
-
+  console.log(products);
   useEffect(() => {
     const productsRef = collection(db, "products");
 
@@ -18,16 +18,16 @@ export const ItemListContainer = () => {
       ? query(productsRef, where("brand", "==", brand))
       : productsRef;
 
-    const qCat = categoryId
-      ? query(
-          productsRef,
-          where("category", "==", categoryId),
-          where("brand", "==", brand)
-        )
-      : productsRef;
-
+    const qCatAndBrand =
+      categoryId && brand
+        ? query(
+            productsRef,
+            where("category", "==", categoryId),
+            where("brand", "==", brand)
+          )
+        : productsRef;
     if (brand && categoryId) {
-      getDocs(qCat).then((res) => {
+      getDocs(qCatAndBrand).then((res) => {
         setProducts(
           res.docs.map((doc) => {
             return {

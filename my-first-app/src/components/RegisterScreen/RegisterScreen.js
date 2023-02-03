@@ -1,8 +1,8 @@
 import "./RegisterScreen.scss";
 import { useContext, useState } from "react";
-import Button from "react-bootstrap/Button";
 import { LoginContext } from "../../context/LoginContext";
 import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 export const RegisterScreen = () => {
   const [values, setValues] = useState({
     email: "",
@@ -48,7 +48,22 @@ export const RegisterScreen = () => {
             name="password"
           />
           {user.error && <p className="error">{user.error}</p>}
-          <button className="btn">Registrarme</button>
+          <Button
+            sx={{
+              margin: "15px 0 15px 0",
+              backgroundColor: "black",
+              color: "#DEDEDE",
+              width: "100%",
+              "&:hover": {
+                backgroundColor: "white",
+                color: "black",
+              },
+            }}
+            type="submit"
+            variant="contained"
+          >
+            Registrarme
+          </Button>
         </form>
         <Link sx={{ color: "black", textDecoration: "none" }} to="/login">
           Ya estoy registrado

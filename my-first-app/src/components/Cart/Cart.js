@@ -18,7 +18,7 @@ export const Cart = () => {
           <div>
             <h2 className="empty__title">Parece que tu carrito está vacío</h2>
           </div>
-          <div>
+          <div className="image__container">
             <img className="empty__image" src="./img/emptyCart.png" />
           </div>
         </div>
@@ -67,7 +67,7 @@ export const Cart = () => {
                 <p>Unidades: {item.amount}</p>
                 <p>Precio: ${item.price * item.amount} </p>
               </div>
-              <Button onClick={() => deleteItem(item.id)}>
+              <button className="btn" onClick={() => deleteItem(item.id)}>
                 <DeleteIcon
                   color="error"
                   variant="contained"
@@ -81,7 +81,7 @@ export const Cart = () => {
                     },
                   }}
                 />
-              </Button>
+              </button>
             </div>
           </div>
         ))}

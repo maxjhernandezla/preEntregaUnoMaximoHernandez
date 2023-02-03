@@ -9,11 +9,19 @@ export const CartWidget = () => {
   const { user } = useContext(LoginContext);
 
   return (
-    <Link to="/cart" className="cart__container">
-      <ShoppingCartIcon className="cart" fontSize="small" />
-      {cart.length > 0 && (
-        <span className="cart__number">{user.logged && cartItems()}</span>
+    <div>
+      {user.logged ? (
+        <Link to="/cart" className="cart__container">
+          <ShoppingCartIcon className="cart" fontSize="small" />
+          {cart.length > 0 && (
+            <span className="cart__number">{user.logged && cartItems()}</span>
+          )}
+        </Link>
+      ) : (
+        <Link to="/login" className="cart__container">
+          <ShoppingCartIcon className="cart" fontSize="small" />
+        </Link>
       )}
-    </Link>
+    </div>
   );
 };
