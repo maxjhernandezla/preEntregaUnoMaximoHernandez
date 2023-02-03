@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import {
   collection,
   addDoc,
@@ -9,6 +10,7 @@ import {
   doc,
 } from "firebase/firestore";
 import { useContext, useState } from "react";
+
 import { Link, Navigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import { db } from "../../firebase/config";
@@ -21,22 +23,19 @@ export const Checkout = () => {
     name: "",
     address: "",
     email: "",
-    secondEmail: "",
   });
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
     setValues({
       ...values,
-      [name]: value,
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     //HACER UNA VALIDACION PARA QUE LA ORDEN NO TENGA DATOS INCOMPLETOS O INVÁLIDOS
-    if (values.email === values.secondEmail) {
-    }
+
     const order = {
       client: values,
       items: cart,
@@ -89,19 +88,16 @@ export const Checkout = () => {
         <h3>Tu compra fue exitosa</h3>
         <p>Tu número de orden es: {orderId}</p>
         <p>Muchas gracias</p>
-        <Link className="btn checkout__btn" to="/">
+        <Button component={Link} to="/" className="checkout__btn btn">
           Volver
-        </Link>
+        </Button>
       </div>
     );
   }
 
-  // if (cart.length === 0) {
-  //   return <Navigate to="/" />;
-  // }
   return (
-    <div className="container checkout__container my-5">
-      <h3>Terminar mi compra</h3>
+    <div className="container my-5 checkout__container">
+      <h2>Terminar mi compra</h2>
       <form onSubmit={handleSubmit}>
         <input
           className="form-control my-2"
@@ -110,6 +106,7 @@ export const Checkout = () => {
           name="name"
           value={values.name}
           placeholder="Tu nombre"
+          required
         />
 
         <input
@@ -119,6 +116,7 @@ export const Checkout = () => {
           name="address"
           value={values.address}
           placeholder="Tu dirección"
+          required
         />
 
         <input
@@ -128,16 +126,11 @@ export const Checkout = () => {
           name="email"
           value={values.email}
           placeholder="Tu correo electrónico"
+          required
         />
-        <input
-          className="form-control my-2"
-          onChange={handleInputChange}
-          type="email"
-          name="secondEmail"
-          value={values.secondEmail}
-          placeholder="Tu correo electrónico"
-        />
-        <button className="checkout__btn btn">Enviar</button>
+        <Button type="submit" className="checkout__btn btn">
+          Enviar
+        </Button>
       </form>
     </div>
   );

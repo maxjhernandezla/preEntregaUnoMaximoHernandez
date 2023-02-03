@@ -10,7 +10,7 @@ import { SideBar } from "../SideBar/SideBar";
 export const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const { brand, categoryId } = useParams();
-  console.log(products);
+
   useEffect(() => {
     const productsRef = collection(db, "products");
 
